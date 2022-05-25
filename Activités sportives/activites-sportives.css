@@ -1,0 +1,64 @@
+.activite-grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.activite-grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 170px;
+    padding-right: 170px;
+    padding-left: 170px;
+}
+
+.activite{
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    min-width: 0;
+}
+
+.image-activite{
+    width: 100%;
+}
+
+.image-row{
+
+}
+
+
+
+.description-row{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nom-activite{
+    margin-top: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.button-coach{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    margin-right: 0;
+    color: #505457;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.button-coach:hover{
+    
+}
+
