@@ -63,7 +63,7 @@ padding: 20px;}
     color: black;
     width:100%;
 }
-}/*
+/*
 /
 se connecter + s'enregistrer
 /
@@ -100,4 +100,13 @@ Tout parcourir
 */
 .card-deck{
     margin-top: 40px;
+}
+#wrapper4admin{
+    background-color:darkgrey;
+    border: 2px;border-color: black;
+    margin: 20px;
+    padding: 20px;
+}
+.form-check3{
+    text-align: center;
 }
