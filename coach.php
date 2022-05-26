@@ -21,10 +21,16 @@
 
     </head>
     <body>
+
+        <?php include 'include/menu_navigation_principal.php';?>
+        <?php include 'include/menu_nav.php';?>
+
         <div class="coach-grid">
-            <div class="image-row">
+
+            <div class="coach-image-row">
                 <img class="image-coach" src="img/votrecompte.png" alt="coach">
             </div>
+
             <div class="description-grid">
                 <div class="info-coach">
                     <p>Nom</p>
@@ -44,17 +50,22 @@
             
                 <div class="button-grid">
                     <div class="button">
-                        <p>Voir CV</p>
+                        <p class="text-button">Voir CV</p>
                     </div>
                     <div class="button">
-                        <p>Prendre rendez-vous</p>
+                        <p class="text-button">Prendre rendez-vous</p>
                     </div>
                     <div class="button">
-                        <p>Chat</p>
+                        <p class="text-button">Chat</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div>
+            <img class="image-edt" src="img/edt.png" alt="">
+        </div>
+        <?php include 'include/footer.php'; ?>
     </body>
 </html>
 
