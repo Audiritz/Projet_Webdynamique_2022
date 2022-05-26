@@ -24,5 +24,6 @@
 	<?php include 'include/menu_navigation_sportdecompet.php';?>
 	<?php include 'include/menu_nav.php';?>
 	<?php include 'include/footer.php'; ?>
+
 </body>
 </html>

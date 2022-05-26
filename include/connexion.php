@@ -18,19 +18,25 @@ if (isset($_POST['formlogin'])) {
 			$hashpassword = $result['password'];
 			if (password_verify($mp, $hashpassword)) {
 				echo "Le mot de passe est bon";
-                session_start();
+				$_SESSION['open']=false;
+				if($_SESSION['open']!=true)
+				{
+                
 				$_SESSION['email']=$result['email'];
 				$_SESSION['pseudo']=$result['pseudo'];
 				$_SESSION['id']=$result['id'];
 				$_SESSION['password']=$result['password'];
 				$_SESSION['statut']=$result['statut'];
 				$_SESSION['date']=$result['date'];
+				$_SESSION['open']=true;
 				$semail= $_SESSION['email'];
 				$spseudo=$_SESSION['pseudo'];
 				$sid=$_SESSION['id'];
 				$spassword=$_SESSION['password'];
 				$statut=$_SESSION['statut'];
 				$date=$_SESSION['date'];
+			}
+
 
 			}
 			else
