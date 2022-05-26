@@ -6,3 +6,7 @@ new branch
 
 test
 test2
+
+test4 conflit
+
+test4 dev
