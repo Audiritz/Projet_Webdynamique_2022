@@ -1,0 +1,103 @@
+body {
+    background-color:burlywood;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}/*
+/
+accueil
+/
+*/
+#carouselExampleIndicators {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 40px;
+    color:black;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border: solid;
+}
+.nav-item {
+
+    font-size:xx-large;
+    font-weight: 800;
+    font-family: serif;
+    margin-left: 20px;
+margin-right: 20px;
+padding: 20px;}
+
+#left-column{
+    margin-right: 750px;
+}
+#right-column img{
+
+    margin-top:  -335px;
+}
+
+
+#navbarNav img{
+    margin-right: -1200px;
+}
+
+.carousel-item{
+
+    font-size:xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: -1px 0 0 
+    rgba(0, 0, 0, 0.8), 
+                 1px 0 0 
+    rgba(0, 0, 0, 0.8),
+                 0 -1px 0 
+    rgba(0, 0, 0, 0.8),
+                 0 1px 0 
+    rgba(0, 0, 0, 0.8);
+
+}
+
+
+#footer{
+    text-align:center;
+    color: black;
+    width:100%;
+}
+}/*
+/
+se connecter + s'enregistrer
+/
+*/
+#wrapper2{
+    border: 2px;
+    padding: 20px;
+    margin: 20px;
+}
+#wrapper2 img{
+margin-left: 1000px; 
+}
+
+.form-row{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    margin-top: -120px;
+    margin-bottom: 120px;
+    text-align: center;
+    text-shadow: 0 0 7px 
+rgba(0,0,0, 0.5);
+}
+.form-check2{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+/*
+/
+Tout parcourir
+/
+*/
+.card-deck{
+    margin-top: 40px;
+}
