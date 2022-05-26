@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <?php  echo $_SESSION['pseudo']; ?>
+    
 	<?php include 'include/menu_navigation_principal.php';?>
 	
 	<div id="wrapper">  
