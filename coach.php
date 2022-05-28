@@ -24,6 +24,7 @@
 
         <?php include 'include/menu_navigation_principal.php';?>
         <?php include 'include/menu_nav.php';?>
+        <?php include 'include/database.php';?>
 
         <div class="coach-grid">
 
@@ -33,7 +34,14 @@
 
             <div class="description-grid">
                 <div class="info-coach">
-                    <p>Nom</p>
+                    <p>
+                        <?php
+                            $q=$db->prepare("SELECT * FROM coachs WHERE email = :email");
+                            $q->execute(['email' => $email]);
+                            /*$q=$db->prepare("SELECT * FROM 'coachs' WHERE 'discipline' = :3");
+                            $q->execute(['name' => $name]);*/
+                        ?>
+                    </p>
                 </div>
                 <div class="info-coach">
                     <p>Coach</p>
@@ -66,7 +74,7 @@
             <img class="image-edt" src="img/edt.png" alt="edt">
         </div>
         <?php include 'include/footer.php'; ?>
-    </body>
+        
 </html>
 
 
