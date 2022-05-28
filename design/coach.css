@@ -67,6 +67,16 @@ p{
     border-radius: 0.25rem;
     background-color: white;
     padding: 0.375rem 0.75rem;
+    color: #505457;
+    transition: 0.15s;
+}
+
+.text-button:hover{
+    text-decoration: none;
+    color: white;
+    background-color: #505457;
+    border-style: none;
+    opacity: 0.8;
 }
 
 .image-edt{
@@ -74,4 +84,5 @@ p{
     height: 300px;
     padding-bottom: 40px;
 }
+
 

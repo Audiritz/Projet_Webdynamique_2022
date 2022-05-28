@@ -50,13 +50,13 @@
             
                 <div class="button-grid">
                     <div class="button">
-                        <p class="text-button">Voir CV</p>
+                        <a href="" class="text-button">Voir CV</a>
                     </div>
                     <div class="button">
-                        <p class="text-button">Prendre rendez-vous</p>
+                        <a href="" class="text-button">Prendre rendez-vous</a>
                     </div>
                     <div class="button">
-                        <p class="text-button">Chat</p>
+                        <a href="" class="text-button">Chat</a>
                     </div>
                 </div>
             </div>
@@ -68,5 +68,7 @@
         <?php include 'include/footer.php'; ?>
     </body>
 </html>
+
+
 
 
