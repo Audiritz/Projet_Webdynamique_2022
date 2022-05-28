@@ -25,59 +25,6 @@
     <?php include 'include/menu_nav.php';?>
     <form method="post">
         <table>
-            <p><h3>Users</h3></p>
-            <tr>
-                <td>Nom:</td>
-                <td><input type="text" step="0.01" name="nom" id="nom"></td>
-            </tr>
-
-            <tr>
-                <td>Prénom:</td>
-                <td><input type="text" step="0.01" name="prenom" id="prenom"></td>
-            </tr>
-
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" step="0.01" name="email" id="email"></td>
-            </tr>
-
-            <tr>
-                <td>Naissance:</td>
-                <td><input type="date" step="0.01" name="born" id="born"></td>
-            </tr>
-
-            <tr>
-                <td>Numéro de carte:</td>
-                <td><input type="number" step="0.01" name="num_carte" id="num_carte"></td>
-            </tr>
-
-            <tr>
-                <td>Date d'expiration:</td>
-                <td><input type="month" step="0.01" name="exp_carte" id="exp_carte"></td>
-            </tr>
-
-            <tr>
-                <td>CVV:</td>
-                <td><input type="number" step="0.01" name="cvv_carte" id="cvv_carte"></td>
-            </tr>
-
-            <tr>
-                <td>Mot de passe:</td>
-                <td><input type="password" step="0.01" name="mp" id="mp"></td>
-            </tr>
-
-            <tr>
-                <td>Confirmation mot de passe:</td>
-                <td><input type="password" step="0.01" name="cmp" id="cmp"></td>
-            </tr>
-
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" name="formsend" id="formsend" value="Soumettre">
-                </td>
-            </tr>
-        </table>
-        <table>
             <h3>Coachs</h3>
             <tr>
                 <td>Nom:</td>
@@ -126,45 +73,70 @@
                 </td>
             </tr>
         </table>
+       
+
+
+
+
+ </div>
+<form method="POST" action="" enctype="multipart/form-data">
+    <input type="file" name="monfichier" id="monfichier" value="">
+    <input type= "submit" name="chargement" value="charger le fichier">
+</form>
+ <?php
+if(isset($_POST) && !empty($_POST)){
+
+    var_dump($_FILES);
+
+    if($_FILES['monfichier']['error'] == 0){
+        ?> <pre><?php print_r($_POST) ?> </pre> <?php
+        
+        //test taille
+        if($_FILES['monfichier']['size'] > 1500000){
+            $error = "Votre fichier est trop lourd.";
+        }
+        
+        // test extension
+        $extension = strrchr($_FILES['monfichier']['name'],'.');
+        if($extension != '.jpg'){
+            $error = "Votre fichier n'est pas conforme.";
+        }
+
+        // au final :
+        if(!isset($error)){
+            move_uploaded_file($_FILES['monfichier']['tmp_name'], 'img/'.$_FILES['monfichier']['name']);
+            echo "le fichier est chargé";
+        }
+
+
+    }else{
+        $error = "problème formulaire";
+    }
+}
+
+?>
+
+
+
+
+<div style="color:red">
+ 
+<?php 
+if(isset($error)) 
+{
+  echo $error; 
+}
+  ?>
+<?php 
+$image = 'img/'.$_FILES['monfichier']['name'];
+echo 'img/'.$_FILES['monfichier']['name'];
+print '<img src="'.$image.'">';
+
+?>
+    
+         
     </form>
-         <table>
-            <h3>
-                Administrateur
-            </h3>
-            <tr>
-                <td>Nom:</td>
-                <td><input type="text" step="0.01" name="cnom" id="cnom"></td>
-            </tr>
-
-            <tr>
-                <td>Prénom:</td>
-                <td><input type="text" step="0.01" name="cprenom" id="cprenom"></td>
-            </tr>
-
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" step="0.01" name="cemail" id="cemail"></td>
-            </tr>
-
-            
-            <tr>
-                <td>Mot de passe:</td>
-                <td><input type="password" step="0.01" name="mp" id="mp"></td>
-            </tr>
-
-            <tr>
-                <td>Confirmation mot de passe:</td>
-                <td><input type="password" step="0.01" name="cmp" id="cmp"></td>
-            </tr>
-            
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
-                </td>
-            </tr>
-        </table>
-    </form>
-    <?php include 'include/inscription.php'?>
+    <?php include 'include/cinscription.php'?>
     <?php include 'include/footer.php'; ?>
 </body>
 </html>

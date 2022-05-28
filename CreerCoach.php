@@ -14,39 +14,40 @@
 </head>
 
 <body>
+    <?php include 'include/database.php'?>
     <a href="#"><img src="omnes.jfif"></a>
     <h1>Ajouter un coach</h1>
     <br>
     <br>
-    <form>
+    <form method="post">
         <div class="form-row">
             <div class="col">
                 <label for="inputFirstName">Prenom Coach</label>
-                <input type="text" class="form-control" id="inputFirstName" placeholder="Prenom">
+                <input type="text" class="form-control" name="inputFirstName" id="inputFirstName" placeholder="Prenom">
             </div>
             <div class="col">
                 <label for="inputLastName">Nom Coach</label>
-                <input type="text" class="form-control" id="inputLastName" placeholder="Nom">
+                <input type="text" class="form-control" name="inputLastName" id="inputLastName" placeholder="Nom">
             </div>
         </div>
         <div class="form-group col-md-6">
             <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            <input type="email" class="form-control" name="inputEmail4"id="inputEmail4" placeholder="Email">
         </div>
         <div class="form-group col-md-6">
             <label for="inputPassword4">Mot de passe</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Mot de passe">
+            <input type="password" class="form-control" name="inputPassword4" id="inputPassword4" placeholder="Mot de passe">
         </div>
+        <div class="form-group col-md-6">
+            <label for="inputPassword4">Confirmation mot de passe</label>
+            <input type="password" class="form-control" name="inputCpassword4" id="inputCpassword4" placeholder="Mot de passe">
         </div>
-        <div class="form-group col-md-2">
-            <label for="inputNumEtudiant">ID</label>
-            <input type="text" class="form-control" id="inputNumEtudiant" placeholder="1234 ">
         </div>
 
         <div class="form-row">
             <div class="col">
                 <label class="mr-sm-2" for="specialite1">Specialite 1</label>
-                <select class="custom-select mr-sm-2" id="specialite1">
+                <select class="custom-select mr-sm-2" name="specialite1" id="specialite1">
                     <option selected>Choose...</option>
                     <option value="1">Musculation</option>
                     <option value="2">Fitness</option>
@@ -63,7 +64,7 @@
             </div>
             <div class="col">
                 <label class="mr-sm-2" for="specialite2">Specialite 2</label>
-                <select class="custom-select mr-sm-2" id="specialite2">
+                <select class="custom-select mr-sm-2" name="specialite2" id="specialite2">
                     <option selected>Choose...</option>
                     <option value="1">Musculation</option>
                     <option value="2">Fitness</option>
@@ -84,11 +85,13 @@
             <label for="inputphoto">Url photo</label>
             <input type="text" class="form-control" id="inputPhoto" placeholder="Photo">
         </div>
-        <div class="form-group">
+        <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
+        <!-- <div class="form-group">
             <div class="form-check3">
-                <a class="btn btn-outline-secondary" href="http://localhost/Projet_Web/CompteAdmin.php" role="button">Ajouter</a>
+                <a class="btn btn-outline-secondary" href="http://localhost/Projet_Web/CompteAdmin.php" role="button">Ajouter</a> -->
             </div>
         </div>
     </form>
+    <?php include 'include/cinscription.php'; ?>
 
 </body>

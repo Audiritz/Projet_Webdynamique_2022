@@ -4,7 +4,7 @@
 if(isset($_POST['formsend'])){
 	extract($_POST);
 
-	if(!empty($mp) && !empty($cmp) && !empty($email) && !empty($pseudo) && !empty($statut)){
+	if(!empty($mp) && !empty($cmp) && !empty($email) && !empty($prenom) && !empty($nom)&& !empty($born) && !empty($num_carte) && !empty($exp_carte) && !empty($cvv_carte)){
 		if($mp==$cmp){
 			$options=['cost' => 12,];
 			$hashpass = password_hash($mp, PASSWORD_BCRYPT,$options);
@@ -17,12 +17,17 @@ if(isset($_POST['formsend'])){
 			$result = $c->rowCount();
 
 			if($result==0){
-			$q= $db->prepare("INSERT INTO users(pseudo, email, password, statut) VALUES(:pseudo,:email,:password,:statut)");
+			$q= $db->prepare("INSERT INTO users(prenom, nom, naissance, email, password, num_carte, exp_carte, cvv_carte) VALUES(:prenom, :nom, :naissance, :email, :password, :num_carte, :exp_carte, :cvv_carte)");
 			$q->execute([
-				'pseudo' => $pseudo,
-				'email' => $email,
-				'password' => $hashpass,
-				'statut'=> $statut
+				'prenom' => $prenom,
+				'nom' => $nom,
+				'naissance' => $born,
+				'email'=> $email,
+				'password'=> $hashpass,
+				'num_carte'=> $num_carte,
+				'exp_carte'=> $exp_carte,
+				'cvv_carte'=> $cvv_carte
+
 			]);
 		}else{
 			echo "un email existe deja";
@@ -36,6 +41,7 @@ if(isset($_POST['formsend'])){
 	else{
 		echo "champs non remplies";
 	}
+
 }
 
   ?>
