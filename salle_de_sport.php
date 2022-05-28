@@ -25,32 +25,30 @@
 		<p class="titre">
 			Salle de sport OMNES
 		</p>
-		
-		<img classe="image-salle" src="img/Salle de sport.jpg" alt="salle-de-sport">
 
-		<div class="grid-bottom">
-			<div class="description-collumn">
-				<p class="description">
-					Salle : 
-				</p>
-				<p class="description">
-					Téléphone : 
-				</p>
-				<p class="description">
-					Email :
-				</p>
+		<div class="salle-de-sport-grid">
+			<div class="image-row">
+				<img class="image-salle" src="img/Salle de sport.jpg" alt="salle-de-sport">
 			</div>
-			<div class="button-collumn">
-				<a href="" class="services-button">Nos services</a>
-			</div>	
 
+			<div class="grid-bottom">
+				<div class="description-collumn">
+					<p class="description">
+						Salle : G-001 
+					</p>
+					<p class="description">
+						Téléphone : +33 01 22 33 44 55
+					</p>
+					<p class="description">
+						Email : salle.sport@omnessports.fr
+					</p>
+				</div>
+				<div class="button-collumn">
+					<a href="" class="services-button">Nos services</a>
+				</div>	
+
+			</div>
 		</div>
-
-
-
-
-
-
 		<?php include 'include/footer.php'; ?>
 		
 	</body>
