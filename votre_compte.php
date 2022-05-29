@@ -18,16 +18,8 @@
 	<link rel="stylesheet" href="design/style.css">
 </head>
 <body>
-	Recherche
-	<?php include 'include/menu_navigation_principal.php';?>
-	<?php include 'include/menu_nav.php';?>
-	<?php include 'include/footer.php'; ?>
-	
-	
 
-		
-		
-		
+	<?php include 'include/menu_nav.php';?>	
 	<?php 
 
 	if(! empty($_SESSION['open_admin'])){
@@ -48,33 +40,31 @@
 var_dump($_SESSION);
 ?><a href='include/logout.php'>Click here to log out</a><?php
 	}
-	else{
+	else{}
 
 	?>
-	
+	<br><br><br>
 	<nav class="menu-nav">
 		<ul>
 			<li class="btn">
-				<a href="pconnexion.php">
-					client
+			<a href="pconnexion.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Client</a>
 				</a>
 			</li>
 
 			<li class="btn">
-				<a href="pconnexion_coach.php">
-					coach
+			<a href="pconnexion_coach.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Coach</a>	
 				</a>
 			</li >
 			<li class="btn">
-				<a href="pconnexion_admin.php">
-					administrateur
+			<a href="pconnexion_admin.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Administrateur</a>
 				</a>
 			</li >
-
-<?php  }?>
-
 		</ul>
+
+		<br><br><div id="img1">
+		<img src="img/silhouette.jpg" alt=""></div>
+		<br><br>
 	</nav>
-	
+	<?php include 'include/footer.php'; ?>
 </body>
 </html>
