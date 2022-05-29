@@ -32,7 +32,7 @@
                         </form>
                         
                         <a href="votre_compte.php" class="btn active" role="button" aria-pressed="true"><img
-                                src="img/votrecompte.png" alt="Compte" height="150" width="150"></a>
+                                src="img/votrecompte.png" alt="Compte" height="150" width="150"> </a>
                     </div>
                 </div>
             </nav>
