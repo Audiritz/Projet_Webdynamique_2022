@@ -19,9 +19,9 @@
         
     </head>
     <body>
-        <?php include 'include/menu_navigation_principal.php';?>
+       <!--  <?php include 'include/menu_navigation_principal.php';?>
         <?php include 'include/menu_navigation_toutparcourir.php';?>
-        <?php include 'include/menu_navigation_activitesportive.php';?>
+        <?php include 'include/menu_navigation_activitesportive.php';?> -->
 
         <?php include 'include/menu_nav.php';?>
 

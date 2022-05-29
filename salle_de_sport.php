@@ -19,8 +19,8 @@
 		<link rel="stylesheet" href="design/salle_de_sport.css">
 	</head>
 	<body>
-		<?php include 'include/menu_navigation_principal.php';?>
-		<?php include 'include/menu_navigation_toutparcourir.php';?>
+		<!-- <?php include 'include/menu_navigation_principal.php';?>
+		<?php include 'include/menu_navigation_toutparcourir.php';?> -->
 		<?php include 'include/menu_nav.php';?>
 		<p class="titre">
 			Salle de sport OMNES

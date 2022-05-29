@@ -3,7 +3,7 @@
 
 if(isset($_POST['formsend'])){
 	extract($_POST);
-	var_dump($_POST);
+	//var_dump($_POST);
 
 	if(!empty($mp) && !empty($cmp) && !empty($email) && !empty($prenom) && !empty($nom)&& !empty($born) && !empty($num_carte) && !empty($exp_carte) && !empty($cvv_carte)){
 		if($mp==$cmp){

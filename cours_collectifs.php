@@ -22,7 +22,7 @@
     </head>
     <body>
 
-        <?php include 'include/menu_navigation_principal.php';?>
+       <!--  <?php include 'include/menu_navigation_principal.php';?> -->
         <?php include 'include/menu_nav.php';?>
         <?php include 'include/database.php';?>
 

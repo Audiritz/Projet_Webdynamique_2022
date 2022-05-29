@@ -19,8 +19,8 @@
 </head>
 <body>
 	Connexion
-	<?php include 'include/menu_navigation_principal.php';?>
-	<?php include 'include/menu_navigation_moncompte.php';?>
+	<!-- <?php include 'include/menu_navigation_principal.php';?>
+	<?php include 'include/menu_navigation_moncompte.php';?> -->
 	<?php include 'include/database.php'?>
 	<?php include 'include/menu_nav.php';?><br><br><br><br><br><br><br>
 	<h1>Créer un Rdv</h1>
