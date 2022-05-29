@@ -12,20 +12,21 @@ var_dump($_POST);
 			
 			global $db;
 
-			$c=$db->prepare("SELECT email FROM coachs WHERE email = :email");
-			$c->execute(['email' => $inputEmail4]);
+			$c=$db->prepare("SELECT email_coachs FROM coachs WHERE email_coachs = :email_coachs");
+			$c->execute(['email_coachs' => $inputEmail4]);
 
 			$result = $c->rowCount();
 
 			if($result==0){
-			$q= $db->prepare("INSERT INTO coachs(nom, prenom, discipline, discipline2, email, password) VALUES(:nom, :prenom, :discipline, :discipline2, :email, :password)");
+			$q= $db->prepare("INSERT INTO coachs(nom_coachs, prenom_coachs, discipline_coachs, discipline2_coachs, email_coachs, password_coachs, pp_coachs) VALUES(:nom_coachs, :prenom_coachs, :discipline_coachs, :discipline2_coachs, :email_coachs, :password_coachs, :pp_coachs)");
 			$q->execute([
-				'prenom' => $inputFirstName,
-				'nom' => $inputLastName,
-				'email'=> $inputEmail4,
-				'password'=> $hashpass,
-				'discipline'=> $specialite1,
-				'discipline2'=> $specialite2
+				'prenom_coachs' => $inputFirstName,
+				'nom_coachs' => $inputLastName,
+				'email_coachs'=> $inputEmail4,
+				'password_coachs'=> $hashpass,
+				'discipline_coachs'=> $specialite1,
+				'discipline2_coachs'=> $specialite2,
+				'pp_coachs'=> $inputphoto
 
 
 			]);

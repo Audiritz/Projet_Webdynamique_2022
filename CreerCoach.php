@@ -83,7 +83,7 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputphoto">Url photo</label>
-            <input type="text" class="form-control" id="inputPhoto" placeholder="Photo">
+            <input type="text" class="form-control" name="inputphoto" id="inputPhoto" placeholder="Photo">
         </div>
         <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
         <!-- <div class="form-group">

@@ -3,6 +3,7 @@
 
 if(isset($_POST['formsend'])){
 	extract($_POST);
+	var_dump($_POST);
 
 	if(!empty($mp) && !empty($cmp) && !empty($email) && !empty($prenom) && !empty($nom)&& !empty($born) && !empty($num_carte) && !empty($exp_carte) && !empty($cvv_carte)){
 		if($mp==$cmp){
@@ -11,22 +12,22 @@ if(isset($_POST['formsend'])){
 			
 			global $db;
 
-			$c=$db->prepare("SELECT email FROM users WHERE email = :email");
-			$c->execute(['email' => $email]);
+			$c=$db->prepare("SELECT email_users FROM users WHERE email_users = :email_users");
+			$c->execute(['email_users' => $email]);
 
 			$result = $c->rowCount();
 
 			if($result==0){
-			$q= $db->prepare("INSERT INTO users(prenom, nom, naissance, email, password, num_carte, exp_carte, cvv_carte) VALUES(:prenom, :nom, :naissance, :email, :password, :num_carte, :exp_carte, :cvv_carte)");
+			$q= $db->prepare("INSERT INTO users(prenom_users, nom_users, naissance_users, email_users, password_users, num_carte_users, exp_carte_users, cvv_carte_users) VALUES(:prenom_users, :nom_users, :naissance_users, :email_users, :password_users, :num_carte_users, :exp_carte_users, :cvv_carte_users)");
 			$q->execute([
-				'prenom' => $prenom,
-				'nom' => $nom,
-				'naissance' => $born,
-				'email'=> $email,
-				'password'=> $hashpass,
-				'num_carte'=> $num_carte,
-				'exp_carte'=> $exp_carte,
-				'cvv_carte'=> $cvv_carte
+				'prenom_users' => $prenom,
+				'nom_users' => $nom,
+				'naissance_users' => $born,
+				'email_users'=> $email,
+				'password_users'=> $hashpass,
+				'num_carte_users'=> $num_carte,
+				'exp_carte_users'=> $exp_carte,
+				'cvv_carte_users'=> $cvv_carte
 
 			]);
 		}else{
