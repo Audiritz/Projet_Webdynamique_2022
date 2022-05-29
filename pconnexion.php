@@ -23,6 +23,7 @@
 	<?php include 'include/menu_navigation_moncompte.php';?>
 	<?php include 'include/database.php'?>
 	<?php include 'include/menu_nav.php';?>
+	Connexion compte Client
 	<form method="post">
 		<table>
 			<tr>
