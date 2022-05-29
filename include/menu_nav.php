@@ -21,11 +21,16 @@
                                 <a href="rdv.php" class="btn btn-secondary btn-lg active" role="button"
                                     aria-pressed="true">Rendez-Vous</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="pinscription.php" class="btn btn-secondary btn-lg active" role="button"
+                                    aria-pressed="true">Inscription</a>
+                            </li>
                         </ul>
                         <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Recherche</button>
                         </form>
+                        
                         <a href="votre_compte.php" class="btn active" role="button" aria-pressed="true"><img
                                 src="img/votrecompte.png" alt="Compte" height="150" width="150"></a>
                     </div>

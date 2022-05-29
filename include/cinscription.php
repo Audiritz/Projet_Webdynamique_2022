@@ -4,7 +4,7 @@
 if(isset($_POST['cformsend'])){
 	extract($_POST);
 	//echo $_POST['inputEmail4'];
-var_dump($_POST);
+//var_dump($_POST);
 	if(!empty($inputFirstName) && !empty($inputLastName) && !empty($inputEmail4) && !empty($inputPassword4) && !empty($inputCpassword4)){
 		if($inputPassword4==$inputCpassword4){
 			$options=['cost' => 12,];

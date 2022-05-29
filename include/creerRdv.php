@@ -4,7 +4,7 @@
 if(isset($_POST['formsend'])){
 	extract($_POST);
 	//echo $_POST['inputEmail4'];
-var_dump($_POST);
+//var_dump($_POST);
 	if(!empty($debut) && !empty($discipline) && !empty($id)){
 		
 			

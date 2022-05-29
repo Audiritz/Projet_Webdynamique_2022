@@ -23,8 +23,8 @@
 <body>
 
 	<body>
-		<?php include 'include/menu_navigation_principal.php';?>
-		<?php include 'include/menu_navigation_toutparcourir.php';?>
+	<!-- 	<?php include 'include/menu_navigation_principal.php';?>
+		<?php include 'include/menu_navigation_toutparcourir.php';?> -->
 
 
 		<div id="wrapper">
