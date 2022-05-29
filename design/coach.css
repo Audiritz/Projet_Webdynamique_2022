@@ -1,10 +1,9 @@
-p{
-    margin: 0;
-}
+
 
 .coach-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 
@@ -17,6 +16,7 @@ p{
     border-bottom: 1px;
     border-style: solid;
     border-color: rgba(0,0,0,.5);
+
 }
 
 .button-grid{
@@ -79,10 +79,6 @@ p{
     opacity: 0.8;
 }
 
-.image-edt{
-    width: 100%;
-    height: 300px;
-    padding-bottom: 40px;
-}
+
 
 

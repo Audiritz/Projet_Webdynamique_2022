@@ -103,9 +103,6 @@
             </div>
         </div>
 
-        <div>
-            <img class="image-edt" src="img/edt.png" alt="edt">
-        </div>
         <?php include 'include/footer.php'; ?>
         
 </html>

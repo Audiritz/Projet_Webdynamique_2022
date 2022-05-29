@@ -42,17 +42,17 @@
                 <label class="mr-sm-2" for="specialite1">Discipline</label>
                 <select class="custom-select mr-sm-2" name="discipline" id="discipline">
                     <option selected>Choose...</option>
-                    <option value="1">Musculation</option>
-                    <option value="2">Fitness</option>
-                    <option value="3">Biking</option>
-                    <option value="4">Cardio-Training</option>
-                    <option value="5">Cours collectif</option>
-                    <option value="6">Basketball</option>
-                    <option value="7">Football</option>
-                    <option value="8">Rugby</option>
-                    <option value="9">Tenis</option>
-                    <option value="10">Natation</option>
-                    <option value="11">Plongeon</option>
+                    <option value="Muscu">Musculation</option>
+                    <option value="Fitness">Fitness</option>
+                    <option value="Biking">Biking</option>
+                    <option value="Cardio">Cardio-Training</option>
+                    <option value="Cours collectifs">Cours collectif</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Football">Football</option>
+                    <option value="Rugby">Rugby</option>
+                    <option value="Tennis">Tennis</option>
+                    <option value="Natation">Natation</option>
+                    <option value="Plongeon">Plongeon</option>
                 </select>
             </div>
             

@@ -39,7 +39,7 @@
 		 ?>
 		
 		<li class="btn">
-			<a href="pinscription.php">
+			<a href="consulter_rdv.php">
 			Consulter les Rendez-vous
 			</a>
 		</li >
