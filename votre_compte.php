@@ -1,12 +1,12 @@
+<?php  session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>votre_compte</title>
+	<title>Recherche</title>
 	<meta charset="uft-8" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<?php  session_start(); ?>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 	crossorigin="anonymous"></script>
@@ -18,11 +18,46 @@
 	<link rel="stylesheet" href="design/style.css">
 </head>
 <body>
-	Votre compte
+	Recherche
 	<?php include 'include/menu_navigation_principal.php';?>
-	<?php include 'include/menu_navigation_moncompte.php';?>
 	<?php include 'include/menu_nav.php';?>
 	<?php include 'include/footer.php'; ?>
+	<?php 
+	if($_SESSION['open_admin']=true){
+		echo $_SESSION['nom_admin'];
+
+	}
+	if($_SESSION['open_coachs']=true){
+	}
+	if($_SESSION['open_users']=true){
+
+	}
+
+	?>
+	
+	<nav class="menu-nav">
+		<ul>
+			<li class="btn">
+				<a href="pconnexion.php">
+					client
+				</a>
+			</li>
+
+			<li class="btn">
+				<a href="pconnexion_coach.php">
+					coach
+				</a>
+			</li >
+			<li class="btn">
+				<a href="pconnexion_admin.php">
+					administrateur
+				</a>
+			</li >
+
+
+
+		</ul>
+	</nav>
 	
 </body>
 </html>

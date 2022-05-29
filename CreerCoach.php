@@ -42,6 +42,10 @@
             <label for="inputPassword4">Confirmation mot de passe</label>
             <input type="password" class="form-control" name="inputCpassword4" id="inputCpassword4" placeholder="Mot de passe">
         </div>
+         <div class="form-group col-md-6">
+            <label for="inputPassword4">Téléphone</label>
+            <input type="number" class="form-control" name="tel" id="tel" placeholder="tel">
+        </div>
         </div>
 
         <div class="form-row">
@@ -83,7 +87,11 @@
         </div>
         <div class="form-group col-md-6">
             <label for="inputphoto">Url photo</label>
-            <input type="text" class="form-control" id="inputPhoto" placeholder="Photo">
+            <input type="text" class="form-control" name="inputphoto" id="inputPhoto" placeholder="Photo">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="cv">Url CV</label>
+            <input type="text" class="form-control" name="cv" id="cv" placeholder="Photo">
         </div>
         <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
         <!-- <div class="form-group">

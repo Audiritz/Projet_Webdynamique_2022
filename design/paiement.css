@@ -1,7 +1,7 @@
 .container {
   max-width: 960px;
 }
-#wrap{background-image: url("th.jpg");
+#wrap{background-image: url("img/th.jpg");
 }
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }

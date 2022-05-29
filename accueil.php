@@ -26,7 +26,6 @@
 	<div id="wrapper">  
 
 		<?php include 'include/menu_nav.php';?>
-<img src="moutet.jpg">';
 
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

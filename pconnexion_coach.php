@@ -23,7 +23,7 @@
 	<?php include 'include/menu_navigation_moncompte.php';?>
 	<?php include 'include/database.php'?>
 	<?php include 'include/menu_nav.php';?>
-	Connexion compte Client
+	Connexion compte Coach
 	<form method="post">
 		<table>
 			<tr>
@@ -40,12 +40,12 @@
 
 			<tr>
 				<td colspan="2" align="center">
-					<input type="submit" name="formlogin" id="formlogin" value="Soumettre">
+					<input type="submit" name="cformlogin" id="cformlogin" value="Soumettre">
 				</td>
 			</tr>
 		</table>
 	</form>
-	<?php include 'include/connexion.php'?>
+	<?php include 'include/connexion_coach.php'?>
 	<?php include 'include/footer.php'; ?>
 	
 

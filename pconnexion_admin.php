@@ -23,7 +23,7 @@
 	<?php include 'include/menu_navigation_moncompte.php';?>
 	<?php include 'include/database.php'?>
 	<?php include 'include/menu_nav.php';?>
-	Connexion compte Client
+	Connexion compte Administrateur
 	<form method="post">
 		<table>
 			<tr>
@@ -45,7 +45,7 @@
 			</tr>
 		</table>
 	</form>
-	<?php include 'include/connexion.php'?>
+	<?php include 'include/connexion_admin.php'?>
 	<?php include 'include/footer.php'; ?>
 	
 

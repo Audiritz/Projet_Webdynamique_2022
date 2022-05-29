@@ -77,94 +77,49 @@
                 </td>
             </tr>
         </table>
-        <table>
-            <h3>Coachs</h3>
-            <tr>
-                <td>Nom:</td>
-                <td><input type="text" step="0.01" name="cnom" id="cnom"></td>
-            </tr>
-
-            <tr>
-                <td>Prénom:</td>
-                <td><input type="text" step="0.01" name="cprenom" id="cprenom"></td>
-            </tr>
-
-            <tr>
-                <td>Email:</td>
-                <td><input type="email" step="0.01" name="cemail" id="cemail"></td>
-            </tr>
-
-            
-            <tr>
-                <td>Mot de passe:</td>
-                <td><input type="password" step="0.01" name="mp" id="mp"></td>
-            </tr>
-
-            <tr>
-                <td>Confirmation mot de passe:</td>
-                <td><input type="password" step="0.01" name="cmp" id="cmp"></td>
-            </tr>
-            <tr>
-                <td>Spécialité:</td>
-                <td>
-                    <input type="radio" name="spe" id="spe" value="muscu">muscu<br>
-                    <input type="radio" name="spe" id="spe"  value="cardio">Cardio-Training <br>
-                    <input type="radio" name="spe" id="spe"  value="fitness">Fitness <br>
-                    <input type="radio" name="spe" id="spe" value="biking">Biking <br>
-                    <input type="radio" name="spe" id="spe"  value="basket">Basketball <br>
-                    <input type="radio" name="spe" id="spe"  value="foot">Football<br>
-                    <input type="radio" name="spe" id="spe" value="natation">Natation<br>
-                    <input type="radio" name="spe" id="spe"  value="plongeon">Plongeon <br>
-                    <input type="radio" name="spe" id="spe"  value="tennis">Tennis <br>
-                    <input type="radio" name="spe" id="spe"  value="rugby">Rugby <br>
-                    <input type="radio" name="spe" id="spe"  value="cours_co">Cours collectif<br>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
-                </td>
-            </tr>
-        </table>
     </form>
+        
+        <form method="post">
          <table>
             <h3>
                 Administrateur
             </h3>
             <tr>
                 <td>Nom:</td>
-                <td><input type="text" step="0.01" name="cnom" id="cnom"></td>
+                <td><input type="text" step="0.01" name="anom" id="anom"></td>
             </tr>
 
             <tr>
                 <td>Prénom:</td>
-                <td><input type="text" step="0.01" name="cprenom" id="cprenom"></td>
+                <td><input type="text" step="0.01" name="aprenom" id="aprenom"></td>
             </tr>
 
             <tr>
                 <td>Email:</td>
-                <td><input type="email" step="0.01" name="cemail" id="cemail"></td>
+                <td><input type="email" step="0.01" name="aemail" id="aemail"></td>
             </tr>
 
             
             <tr>
                 <td>Mot de passe:</td>
-                <td><input type="password" step="0.01" name="mp" id="mp"></td>
+                <td><input type="password" step="0.01" name="amp" id="amp"></td>
             </tr>
 
             <tr>
                 <td>Confirmation mot de passe:</td>
-                <td><input type="password" step="0.01" name="cmp" id="cmp"></td>
+                <td><input type="password" step="0.01" name="acmp" id="acmp"></td>
             </tr>
             
             <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" name="cformsend" id="cformsend" value="Soumettre">
+                    <input type="submit" name="aformsend" id="aformsend" value="Soumettre">
                 </td>
             </tr>
         </table>
     </form>
     <?php include 'include/inscription.php'?>
+    <?php include 'include/ainscription.php'?>
     <?php include 'include/footer.php'; ?>
+
 </body>
 </html>
