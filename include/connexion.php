@@ -31,8 +31,8 @@ if (isset($_POST['formlogin'])) {
 				$_SESSION['num_carte_users']=$result['num_carte_users'];
 				$_SESSION['date_users']=$result['date_users'];
 				$_SESSION['open_users']=true;
-				
-				header('Location: http://localhost/Projet_Webdynamique_2022/CompteClient.php');
+				echo "connection OK!";
+				header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
   exit();
 
 

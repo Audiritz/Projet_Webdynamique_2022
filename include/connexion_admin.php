@@ -28,7 +28,8 @@ if (isset($_POST['formlogin'])) {
 				$_SESSION['open_admin']=true;
 
 				echo "connection OK!";
-				
+				header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
+  exit();
 
 			}
 			else
