@@ -18,7 +18,7 @@ var_dump($_POST);
 			$result = $c->rowCount();
 
 			if($result==0){
-			$q= $db->prepare("INSERT INTO coachs(nom_coachs, prenom_coachs, discipline_coachs, discipline2_coachs, email_coachs, password_coachs, pp_coachs, tel_coachs) VALUES(:nom_coachs, :prenom_coachs, :discipline_coachs, :discipline2_coachs, :email_coachs, :password_coachs, :pp_coachs, :tel_coachs)");
+			$q= $db->prepare("INSERT INTO coachs(nom_coachs, prenom_coachs, discipline_coachs, discipline2_coachs, email_coachs, password_coachs, pp_coachs, tel_coachs, cv_coachs) VALUES(:nom_coachs, :prenom_coachs, :discipline_coachs, :discipline2_coachs, :email_coachs, :password_coachs, :pp_coachs, :tel_coachs, :cv_coachs)");
 			$q->execute([
 				'prenom_coachs' => $inputFirstName,
 				'nom_coachs' => $inputLastName,
@@ -27,7 +27,8 @@ var_dump($_POST);
 				'discipline_coachs'=> $specialite1,
 				'discipline2_coachs'=> $specialite2,
 				'pp_coachs'=> $inputphoto,
-				'tel_coachs'=>$tel
+				'tel_coachs'=>$tel,
+				'cv_coachs'=>$cv
 
 
 			]);

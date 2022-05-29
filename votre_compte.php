@@ -22,29 +22,42 @@
 	<?php include 'include/menu_navigation_principal.php';?>
 	<?php include 'include/menu_nav.php';?>
 	<?php include 'include/footer.php'; ?>
+	<?php 
+	if($_SESSION['open_admin']=true){
+		echo $_SESSION['nom_admin'];
+
+	}
+	if($_SESSION['open_coachs']=true){
+	}
+	if($_SESSION['open_users']=true){
+
+	}
+
+	?>
+	
 	<nav class="menu-nav">
-	<ul>
-		<li class="btn">
-			<a href="pconnexion.php">
-			client
-			</a>
-		</li>
-		
-		<li class="btn">
-			<a href="pconnexion_coach.php">
-			coach
-			</a>
-		</li >
-		<li class="btn">
-			<a href="pconnexion_admin.php">
-			administrateur
-			</a>
-		</li >
-		
-		
-		
-	</ul>
-</nav>
+		<ul>
+			<li class="btn">
+				<a href="pconnexion.php">
+					client
+				</a>
+			</li>
+
+			<li class="btn">
+				<a href="pconnexion_coach.php">
+					coach
+				</a>
+			</li >
+			<li class="btn">
+				<a href="pconnexion_admin.php">
+					administrateur
+				</a>
+			</li >
+
+
+
+		</ul>
+	</nav>
 	
 </body>
 </html>
