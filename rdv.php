@@ -21,7 +21,46 @@
 	rdv
 	<?php include 'include/menu_navigation_principal.php';?>
 	<?php include 'include/menu_nav.php';?>
+
+
+<nav class="menu-nav">
+	<ul>
+		<?php if (!empty($_SESSION['open_users'])) 
+		{?>
+		<li class="btn">
+			<a href="pcreerRdv.php">
+			Créer un Rendez-vous
+			</a>
+		</li><?php 
+}
+		if (!empty($_SESSION['open_users']) || !empty($_SESSION['open_coachs']) || !empty($_SESSION['open_admin']))
+		{
+
+		 ?>
+		
+		<li class="btn">
+			<a href="pinscription.php">
+			Consulter les Rendez-vous
+			</a>
+		</li >
+		<?php }
+		else{
+			echo "Connectez-vous pour accéder au Rendez-vous";
+		} ?>
+		
+	</ul>
+</nav>
+
+
+
+
+
+
+
+
 	<?php include 'include/footer.php'; ?>
+
+
 	
 </body>
 </html>
