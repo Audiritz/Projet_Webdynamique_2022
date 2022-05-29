@@ -68,8 +68,7 @@ $image = 'img/'.$_FILES['monfichier']['name'];
 echo 'img/'.$_FILES['monfichier']['name'];
 print '<img src="'.$image.'">';
 
-print '<img src="img/moutet.jpg"/>';
-//echo 'img/'.$_FILES['monfichier']['name'];
+
  ?>
 
 </body>
