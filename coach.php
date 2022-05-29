@@ -34,14 +34,16 @@
 
             <div class="description-grid">
                 <div class="info-coach">
-                    <p>
-                        <?php
-                            $q=$db->prepare("SELECT * FROM coachs WHERE email_coachs = :email_coachs");
-                            $q->execute(['email_coachs' => $email]);
-                            /*$q=$db->prepare("SELECT * FROM 'coachs' WHERE 'discipline' = :3");
-                            $q->execute(['name' => $name]);*/
-                        ?>
-                    </p>
+                    
+                    <?php
+                    $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 1]);
+                    $result = $q->fetch();
+
+                    echo $result['nom_coachs'];
+                    ?>
+                    
+                    
                 </div>
                 <div class="info-coach">
                     <p>Coach</p>
