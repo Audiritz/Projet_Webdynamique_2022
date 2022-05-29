@@ -17,7 +17,7 @@ if (isset($_POST['cformlogin'])) {
 			//Le compte existe bien
 			$hashpassword = $result['password_coachs'];
 			if (password_verify($mp, $hashpassword)) {
-				echo "Le mot de passe est bon";
+				/*echo "Le mot de passe est bon";*/
 				
 				$_SESSION['email_coachs']=$result['email_coachs'];
 				$_SESSION['prenom_coachs']=$result['prenom_coachs'];
@@ -28,8 +28,8 @@ if (isset($_POST['cformlogin'])) {
 				$_SESSION['discipline2_coachs']=$result['discipline2_coachs'];
 				$_SESSION['pp_coachs']=$result['pp_coachs'];
 				$_SESSION['open_coachs']=true;
-echo "connection OK!";
-				header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
+
+			header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
   exit();
 
 
