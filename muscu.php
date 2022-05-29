@@ -29,7 +29,13 @@
         <div class="coach-grid">
 
             <div class="coach-image-row">
-                <img class="image-coach" src="img/votrecompte.png" alt="coach">
+                <img class="image-coach" src="<?php
+                    $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 1]);
+                    $result = $q->fetch();
+
+                    echo $result['pp_coachs'];
+					?>" alt="coach">
             </div>
 
             <div class="description-grid">
@@ -59,12 +65,12 @@
                     <p>Salle : G-019</p>
                 </div>
                 <div class="info-coach">
-                    <p>Téléphone : <?php
+                    <p>Téléphone : +33 <?php
                     $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
                     $q->execute(['discipline_coachs' => 1]);
                     $result = $q->fetch();
 
-                    echo $result['tel_coach'];
+                    echo $result['tel_coachs'];
                     ?> </p>    
                 </div>
                 <div class="info-coach">

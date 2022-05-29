@@ -10,13 +10,13 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design/style.css">
 </head>
 
-<body>s
+<body>
     <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="omnes.jfif"></a>
+            <a class="navbar-brand" href="#"><img src="img/omnes.jfif"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,7 +37,7 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Recherche</button>
                 </form>
-                <a href="http://localhost/Projet_Web/SeConnecter.php" class="btn active" role="button" aria-pressed="true"><img src="votrecompte.png" alt="Compte" height="150" width="150"></a>
+                <a href="http://localhost/Projet_Web/SeConnecter.php" class="btn active" role="button" aria-pressed="true"><img src="img/votrecompte.png" alt="Compte" height="150" width="150"></a>
             </div>
         </div>
     </nav>
