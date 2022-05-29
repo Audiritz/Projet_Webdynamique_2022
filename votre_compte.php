@@ -22,16 +22,33 @@
 	<?php include 'include/menu_navigation_principal.php';?>
 	<?php include 'include/menu_nav.php';?>
 	<?php include 'include/footer.php'; ?>
+	
+	
+
+		
+		
+		
 	<?php 
-	if($_SESSION['open_admin']=true){
-		echo $_SESSION['nom_admin'];
 
+	if(! empty($_SESSION['open_admin'])){
+		
+     echo $_SESSION['nom_admin']; 
+		
+		var_dump($_SESSION);
+		?><a href='include/logout.php'>Click here to log out</a>
+<a href='CreerCoach.php'>Créer Coach</a><?php
+		
+		}
+		
+	elseif(! empty($_SESSION['open_users'])){
+		var_dump($_SESSION);
+		?><a href='include/logout.php'>Click here to log out</a><?php
 	}
-	if($_SESSION['open_coachs']=true){
+	elseif(! empty($_SESSION['open_coachs'])){
+var_dump($_SESSION);
+?><a href='include/logout.php'>Click here to log out</a><?php
 	}
-	if($_SESSION['open_users']=true){
-
-	}
+	else{
 
 	?>
 	
@@ -54,7 +71,7 @@
 				</a>
 			</li >
 
-
+<?php  }?>
 
 		</ul>
 	</nav>
