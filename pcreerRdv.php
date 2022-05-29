@@ -28,7 +28,7 @@
         <div class="form-row">
             <div class="col">
                 <label for="inputFirstName">Debut du RDV</label>
-                <input type="text" class="form-control" name="debut" id="debut" placeholder="debut rdv">
+                <input type="datetime-local" class="form-control" name="debut" id="debut" placeholder="debut rdv">
             </div>
             <div class="col">
                 <label for="inputLastName">Id du Coach</label>
@@ -40,7 +40,7 @@
         <div class="form-row">
             <div class="col">
                 <label class="mr-sm-2" for="specialite1">Discipline</label>
-                <select class="custom-select mr-sm-2" name="specialite1" id="specialite1">
+                <select class="custom-select mr-sm-2" name="discipline" id="discipline">
                     <option selected>Choose...</option>
                     <option value="1">Musculation</option>
                     <option value="2">Fitness</option>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </form>
-	<?php include 'include/creerRdv.php'?>
+	<?php include 'include/creerRdv.php';?>
 	<?php include 'include/footer.php'; ?>
 	
 
