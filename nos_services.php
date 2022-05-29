@@ -23,19 +23,19 @@
 		<?php include 'include/menu_nav.php';?>
         <div class="button-grid">
             <div class="button-row">
-                <a href="règles.php" class="button">Personnels de la salle de sport</a>
+                <a href="personnels.php" class="button">Personnels de la salle de sport</a>
             </div>
             <div class="button-row">
-                <a href="" class="button">Horaire de la gym</a>
+                <a href="horaires.php" class="button">Horaires de la gym</a>
             </div>
             <div class="button-row">
-                <a href="" class="button">Règles sur l’utilisation des machines </a>    
+                <a href="règles.php" class="button">Règles sur l’utilisation des machines </a>    
             </div>
             <div class="button-row">
-                <a href="" class="button">Nouveaux clients</a>
+                <a href="nouveaux-clients.php" class="button">Nouveaux clients</a>
             </div>
             <div class="button-row">
-                <a href="" class="button">Alimentation et nutrition</a>
+                <a href="https://alimentation-et-nutrition.fr/" class="button">Alimentation et nutrition</a>
             </div>
         </div>
         <?php include 'include/footer.php'; ?>

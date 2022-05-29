@@ -16,7 +16,7 @@
         crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="design/style.css">
-        <link rel="stylesheet" href="design/règles.css">
+        <link rel="stylesheet" href="design/infos-gym.css">
     </head>
     <body>
         <?php include 'include/menu_nav.php';?>
@@ -27,24 +27,26 @@
             </p>
         </p>
         <p>
-            <p class="titre"></p>
-            <p class="text"></p>
+            <p class="titre">2. PARTAGEZ !</p>
+            <p class="text">
+                Une salle de musculation est un espace collectif et tous les adhérents y ont payé leur abonnement, comme vous. Lorsque quelqu’un vous demande de "tourner" avec vous, acceptez. Vous bénéficiez d’un partenaire d’entraînement certes improvisé, mais cela peut vous aider à vous dépasser le temps de ce partage. N’y voyez donc pas une source de stress.
+            </p>
         </p>
         <p>
-            <p class="titre"></p>
-            <p class="text"></p>
+            <p class="titre">3. UTILISEZ UNE SERVIETTE</p>
+            <p class="text">Vous vous dîtes peut-être que vous êtes propre et que vous ne risquez pas d’infecter le matériel avec vos microbes. Mais celui qui a utilisé le matériel avant vous n’avait peut-être pas la même notion de l’hygiène que vous… Placez systématiquement votre serviette sur votre banc ou votre machine avant de l'utiliser. </p>
         </p>
         <p>
-            <p class="titre"></p>
-            <p class="text"></p>
+            <p class="titre">5. N’EMPILEZ PAS LES DISQUES</p>
+            <p class="text">N’empilez pas les disques légers pour charger une barre lourde. Il est fréquent de voir des squats ou des développés couchés réalisés à coup de disques de 5 ou 10kg, alors que vous pouvez à la place utiliser des disques de 20kg. Bravo, vous êtes fort et tout le monde le sait, mais tout le monde s’en fout. Les autres adhérents remarquent simplement qu’il n’y a plus de disques de 5 et 10kg dans le périmètre et qu’il leur sera difficile de faire du curl barre EZ avec des plaques de 20kg.</p>
         </p>
         <p>
-            <p class="titre"></p>
-            <p class="text"></p>
+            <p class="titre">7. N’ENVAHISSEZ PAS LE MATÉRIEL INUTILEMENT</p>
+            <p class="text">Cette règle est surtout valable aux heures de pointe, ou dans les gyms des grandes villes, qui sont particulièrement fréquentés. Lorsque vous vous asseyez sur un banc ou une machine pour répondre à vos sms ou pour poster sur les réseaux sociaux, vous oubliez que les autres adhérents considèrent ce poste comme occupé, par quelqu’un qui ne s’entraîne pas. De même, ne posez pas votre serviette et votre shaker sur un appareil que vous n’envisagez pas d’utiliser.</p>
         </p>
         <p>
-            <p class="titre"></p>
-            <p class="text"></p>
+            <p class="titre">10. PRENEZ SOIN DES DOUCHES</p>
+            <p class="text">Les douches ne sont ni des urinoirs ni des filtres à cheveux. Si vous avez l’habitude de souiller votre salle de bain chez vous, eh bien ne le faites que chez vous. Respectez les autres, et ne laissez aucune trace de votre passage dans les douches. </p>
         </p>
         <?php include 'include/footer.php'; ?>
     </body>
