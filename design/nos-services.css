@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 40px;
-    column-gap: 40px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    row-gap: 100px;
+    column-gap: 60px;
+    padding-bottom: 160px;
+    padding-top: 160px;
 }
 
 .button-row{

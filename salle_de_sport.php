@@ -44,7 +44,7 @@
 					</p>
 				</div>
 				<div class="button-collumn">
-					<a href="" class="services-button">Nos services</a>
+					<a href="nos_services.php" class="services-button">Nos services</a>
 				</div>	
 
 			</div>

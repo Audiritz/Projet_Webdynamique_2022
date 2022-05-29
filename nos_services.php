@@ -16,15 +16,14 @@
             crossorigin="anonymous"></script>
 
             <link rel="stylesheet" href="design/style.css">
-            <link rel="stylesheet" href="design/nos_services.css">
+            <link rel="stylesheet" href="design/nos-services.css">
     </head>
     <body>
-        <?php include 'include/menu_navigation_principal.php';?>
-		<?php include 'include/menu_navigation_toutparcourir.php';?>
+        
 		<?php include 'include/menu_nav.php';?>
         <div class="button-grid">
             <div class="button-row">
-                <a href="" class="button">Personnels de la salle de sport</a>
+                <a href="règles.php" class="button">Personnels de la salle de sport</a>
             </div>
             <div class="button-row">
                 <a href="" class="button">Horaire de la gym</a>
@@ -37,9 +36,6 @@
             </div>
             <div class="button-row">
                 <a href="" class="button">Alimentation et nutrition</a>
-            </div>
-            <div class="button-row">
-                <a href="" class="button">Gynécologie</a>
             </div>
         </div>
         <?php include 'include/footer.php'; ?>
