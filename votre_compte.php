@@ -19,62 +19,94 @@
 </head>
 <body>
 	<!-- Recherche
-	<?php include 'include/menu_navigation_principal.php';?> -->
-	<?php include 'include/menu_nav.php';?>
-	<?php include 'include/footer.php'; ?>
-	
-	
+		<?php include 'include/menu_navigation_principal.php';?> -->
+		<?php include 'include/menu_nav.php';?>
+		
+
+
 
 		
 		
 		
-	<?php 
+		<?php 
 
-	if(! empty($_SESSION['open_admin'])){
-		
-     echo $_SESSION['nom_admin']; 
-		
-		var_dump($_SESSION);
-		?><a href='include/logout.php'>Click here to log out</a>
-<a href='CreerCoach.php'>Créer Coach</a><?php
-		
+		if(! empty($_SESSION['open_admin'])){
+			?>
+			<p>ID : <?php echo $_SESSION['id_admin'] 	 ?></p>
+			<p>Nom : <?php echo $_SESSION['nom_admin'] 	 ?></p>
+			<p>Prénom : <?php echo $_SESSION['prenom_admin'] 	 ?></p>
+			<p>Email : <?php echo $_SESSION['email_admin'] 	 ?></p>
+			
+
+			<p><a href='include/logout.php'>Déconnexion</a></p>
+			<p><a href='CreerCoach.php'>Créer Coach</a></p>
+			<p><a href='pop.php'>Ajouter une photo</a></p>
+			<?php
+
+
 		}
 		
-	elseif(! empty($_SESSION['open_users'])){
-		var_dump($_SESSION);
-		?><a href='include/logout.php'>Click here to log out</a><?php
-	}
-	elseif(! empty($_SESSION['open_coachs'])){
-var_dump($_SESSION);
-?><a href='include/logout.php'>Click here to log out</a><?php
-	}
-	else{
+		elseif(! empty($_SESSION['open_users'])){
+			
+			?>
+			<p>ID : <?php echo $_SESSION['id_users'] 	 ?></p>
+			<p>Nom : <?php echo $_SESSION['nom_users'] 	 ?></p>
+			<p>Prénom : <?php echo $_SESSION['prenom_users'] 	 ?></p>
+			<p>Email : <?php echo $_SESSION['email_users'] 	 ?></p>
+			<p>Naissance : <?php echo $_SESSION['naissance_users'] 	 ?></p>
+			<p>Date de création du compte : <?php echo $_SESSION['date_users'] 	 ?></p>
+			<p>Email : <?php echo $_SESSION['email_users'] 	 ?></p>
+			<p><a href='include/logout.php'>Déconnexion</a></p><?php
+		}
+		elseif(! empty($_SESSION['open_coachs'])){
 
-	?>
-	
-	<nav class="menu-nav">
-		<ul>
-			<li class="btn">
-				<a href="pconnexion.php">
-					client
-				</a>
-			</li>
+			?> 
+			<p>ID : <?php echo $_SESSION['id_coachs'] 	 ?></p>
+			<p>Nom : <?php echo $_SESSION['nom_coachs'] 	 ?></p>
+			<p>Prénom : <?php echo $_SESSION['prenom_coachs'] 	 ?></p>
+			<p>Email : <?php echo $_SESSION['email_coachs'] 	 ?></p>
+			<p>discipline 1 : <?php echo $_SESSION['discipline_coachs'] 	 ?></p>
+			<p>discipline 2 : <?php echo $_SESSION['discipline2_coachs'] 	 ?></p>
+			<p>PP : <?php   print '<img src="'.$_SESSION['pp_coachs'].'">';	 ?></p>
+			<p>CV : <?php print '<img src="'.$_SESSION['cv_coachs'].'">';	 ?></p>
 
-			<li class="btn">
-				<a href="pconnexion_coach.php">
-					coach
-				</a>
-			</li >
-			<li class="btn">
-				<a href="pconnexion_admin.php">
-					administrateur
-				</a>
-			</li >
 
-<?php  }?>
 
-		</ul>
-	</nav>
-	
-</body>
-</html>
+			<?php
+
+
+
+			
+			?><a href='include/logout.php'>Déconnexion</a><?php
+		}
+		else{
+
+			?>
+
+			<nav class="menu-nav">
+				<ul>
+					<li class="btn">
+						<a href="pconnexion.php">
+							client
+						</a>
+					</li>
+
+					<li class="btn">
+						<a href="pconnexion_coach.php">
+							coach
+						</a>
+					</li >
+					<li class="btn">
+						<a href="pconnexion_admin.php">
+							administrateur
+						</a>
+					</li >
+
+				<?php  }?>
+
+
+			</ul>
+		</nav>
+<?php include 'include/footer.php'; ?>
+	</body>
+	</html>

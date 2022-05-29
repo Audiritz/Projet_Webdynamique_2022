@@ -27,6 +27,8 @@ if (isset($_POST['cformlogin'])) {
 				$_SESSION['discipline_coachs']=$result['discipline_coachs'];
 				$_SESSION['discipline2_coachs']=$result['discipline2_coachs'];
 				$_SESSION['pp_coachs']=$result['pp_coachs'];
+				$_SESSION['cv_coachs']=$result['cv_coachs'];
+
 				$_SESSION['open_coachs']=true;
 
 			header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
