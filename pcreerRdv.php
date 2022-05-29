@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="design/style.css">
 </head>
 <body>
-	Connexion
+	
 	<!-- <?php include 'include/menu_navigation_principal.php';?>
 	<?php include 'include/menu_navigation_moncompte.php';?> -->
 	<?php include 'include/database.php'?>
