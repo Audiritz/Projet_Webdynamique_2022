@@ -16,7 +16,7 @@
             crossorigin="anonymous"></script>
 
             <link rel="stylesheet" href="design/style.css">
-            <link rel="stylesheet" href="design/nos-services.css">
+            <link rel="stylesheet" href="design/nos_services.css">
     </head>
     <body>
         <?php include 'include/menu_navigation_principal.php';?>
