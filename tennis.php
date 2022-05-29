@@ -53,7 +53,13 @@
                     
                 </div>
                 <div class="info-coach">
-                    <p>Coach de tennis</p>
+                    <p>Coach de tennis, id : <?php
+					$q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 9]);
+                    $result = $q->fetch();
+
+                    echo $result['id_coachs'];
+                    ?></p>
                 </div>
                 <div class="info-coach">
                     <p>Salle : G-119</p>
@@ -79,10 +85,10 @@
             
                 <div class="button-grid">
                     <div class="button">
-                        <a href="" class="text-button">Voir CV</a>
+                        <a href="CV-tennis.php" class="text-button">Voir CV</a>
                     </div>
                     <div class="button">
-                        <a href="" class="text-button">Prendre rendez-vous</a>
+                        <a href="pcreerRdv.php" class="text-button">Prendre rendez-vous</a>
                     </div>
                     <div class="button">
                         <a href="" class="text-button">Chat</a>
