@@ -36,7 +36,7 @@
                         Musculation
                     </p>
                     <p class="button-coach">
-                        <a href="coach.php">Voir Coach &#8627;</a>
+                        <a href="muscu.php">Voir Coach &#8627;</a>
                     </p>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         Fitness
                     </p>
                     <p class="button-coach">
-                        <a href="coach.php">Voir Coach &#8627;</a>
+                        <a href="fitness.php">Voir Coach &#8627;</a>
                     </p>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         Biking
                     </p>
                     <p class="button-coach">
-                        <a href="coach.php">Voir Coach &#8627;</a>
+                        <a href="biking.php">Voir Coach &#8627;</a>
                     </p>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                         Cardio-Training
                     </p>
                     <p class="button-coach">
-                        <a href="coach.php">Voir Coach &#8627;</a>
+                        <a href="cardio.php">Voir Coach &#8627;</a>
                     </p>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                         Cours Collectifs
                     </p>
                     <p class="button-coach">
-                        <a href="coach.php">Voir Coach &#8627;</a>
+                        <a href="cours_collectifs.php">Voir Coach &#8627;</a>
                     </p>
                 </div>
 

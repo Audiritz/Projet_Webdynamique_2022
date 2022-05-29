@@ -35,7 +35,7 @@
 						Basketball
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="basket.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 						Rugby	
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="rugby.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 						Football
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="foot.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
@@ -79,7 +79,7 @@
 						Tennis
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="tennis.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 						Natation	
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="natation.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 						Plongeon
 					</p>
 					<p class="button-coach">
-						<a href="coach.php">Voir Coach &#8627;</a>
+						<a href="plongeon.php">Voir Coach &#8627;</a>
 					</p>
 				</div>
 			</div>
