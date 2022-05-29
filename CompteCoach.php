@@ -43,6 +43,29 @@
     </nav>
     <div id="wrapper4admin">
         <div class="coach">
+        <?php
+                    /*
+                    $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 6]);
+                    $result = $q->fetch();
+
+                    echo $result['nom_coachs'];
+					?>
+					<?php
+					$q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 6]);
+                    $result = $q->fetch();
+
+                    echo $result['prenom_coachs'];
+                    ?>
+            <hr class="my-4">
+                    <p>Email : <?php
+                    $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 6]);
+                    $result = $q->fetch();
+
+                    echo $result['email_coachs'];*/
+                    ?></p>
             <h2 class="display-4">Compte Coach</h2>
             <p class="lead">Nom</p>
             <p class="lead">Prenom</p>
