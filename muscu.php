@@ -22,7 +22,7 @@
     </head>
     <body>
 
-        <?php include 'include/menu_navigation_principal.php';?>
+        <!-- <?php include 'include/menu_navigation_principal.php';?> -->
         <?php include 'include/menu_nav.php';?>
         <?php include 'include/database.php';?>
 
@@ -59,7 +59,13 @@
                     
                 </div>
                 <div class="info-coach">
-                    <p>Coach de musculation</p>
+                    <p>Coach de musculation, id : <?php
+					$q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                    $q->execute(['discipline_coachs' => 1]);
+                    $result = $q->fetch();
+
+                    echo $result['id_coachs'];
+                    ?></p>
                 </div>
                 <div class="info-coach">
                     <p>Salle : G-019</p>
@@ -85,10 +91,10 @@
             
                 <div class="button-grid">
                     <div class="button">
-                        <a href="" class="text-button">Voir CV</a>
+                        <a href="CV-muscu.php" class="text-button">Voir CV</a>
                     </div>
                     <div class="button">
-                        <a href="" class="text-button">Prendre rendez-vous</a>
+                        <a href="pcreerRdv.php" class="text-button">Prendre rendez-vous</a>
                     </div>
                     <div class="button">
                         <a href="" class="text-button">Chat</a>

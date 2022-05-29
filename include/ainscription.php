@@ -3,7 +3,7 @@
 
 if(isset($_POST['aformsend'])){
 	extract($_POST);
-	var_dump($_POST);
+	//var_dump($_POST);
 
 	if(!empty($amp) && !empty($acmp) && !empty($aemail) && !empty($aprenom) && !empty($anom)){
 		if($amp==$acmp){

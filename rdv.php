@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="design/style.css">
 </head>
 <body>
-	rdv
-	<?php include 'include/menu_navigation_principal.php';?>
+	
+	<!-- <?php include 'include/menu_navigation_principal.php';?> -->
 	<?php include 'include/menu_nav.php';?>
 
 

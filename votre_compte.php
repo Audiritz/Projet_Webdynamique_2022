@@ -19,9 +19,15 @@
 </head>
 <body>
 
+	<!-- Recherche
+	<?php include 'include/menu_navigation_principal.php';?> -->
+	<?php include 'include/menu_nav.php';?>
+	<?php include 'include/footer.php'; ?>
+	
+	
+
 	<?php include 'include/menu_nav.php';?>	
 	<?php 
-
 	if(! empty($_SESSION['open_admin'])){
 		
      echo $_SESSION['nom_admin']; 

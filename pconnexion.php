@@ -16,7 +16,7 @@
 
  <body>
 
- 	<?php include 'include/menu_navigation_moncompte.php'; ?>
+ 	<!-- <?php include 'include/menu_navigation_moncompte.php'; ?> -->
  	<?php include 'include/database.php' ?>
  	<?php include 'include/menu_nav.php'; ?><br><br><br><br><br><br><br>
  	<h1>Connexion compte Client</h1>
