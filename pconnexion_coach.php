@@ -27,14 +27,18 @@
 	<form method="post">
 		<table>
 			<tr>
-				<td>Email:</td>
-				<td><input type="text" step="0.01" name="email" id="email"></td>
+			<div class="col-md-6 mb-3">
+                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                </div>
 			</tr>
 
 
 			<tr>
-				<td>Mot de passe:</td>
-				<td><input type="password" step="0.01" name="mp" id="mp"></td>
+			<div class="col-md-6 mb-3">
+                    <label for="mp">Mot de passe</label>
+                    <input type="password" class="form-control" id="mp" placeholder="">
+                </div>
 			</tr>
 
 
