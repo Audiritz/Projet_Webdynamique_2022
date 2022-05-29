@@ -43,7 +43,7 @@
 			<!-- <a href="pinscription.php">
 			Consulter les Rendez-vous
 			</a> -->
-			<a href="pconnexion_coach.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Consulter les Rendez-vous</a>
+			<a href="consulter_rdv.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Consulter les Rendez-vous</a>
 		</li ><br><br>
 		<?php }
 		else{
