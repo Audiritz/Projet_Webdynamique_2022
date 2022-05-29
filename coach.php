@@ -36,8 +36,8 @@
                 <div class="info-coach">
                     <p>
                         <?php
-                            $q=$db->prepare("SELECT * FROM coachs WHERE email = :email");
-                            $q->execute(['email' => $email]);
+                            $q=$db->prepare("SELECT * FROM coachs WHERE email_coachs = :email_coachs");
+                            $q->execute(['email_coachs' => $email]);
                             /*$q=$db->prepare("SELECT * FROM 'coachs' WHERE 'discipline' = :3");
                             $q->execute(['name' => $name]);*/
                         ?>

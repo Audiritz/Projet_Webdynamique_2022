@@ -44,7 +44,7 @@
 			</tr>
 		</table>
 	</form>
-	<?php include 'include/connexion.php'?>
+	<?php include 'include/connexion_admin.php'?>
 	<?php include 'include/footer.php'; ?>
 	
 

@@ -30,7 +30,7 @@ if (isset($_POST['formlogin'])) {
 				$_SESSION['exp_carte_users']=$result['exp_carte_users'];
 				$_SESSION['num_carte_users']=$result['num_carte_users'];
 				$_SESSION['date_users']=$result['date_users'];
-				$_SESSION['uopen_users']=true;
+				$_SESSION['open_users']=true;
 				
 				header('Location: http://localhost/Projet_Webdynamique_2022/CompteClient.php');
   exit();

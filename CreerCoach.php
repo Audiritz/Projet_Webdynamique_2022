@@ -42,6 +42,10 @@
             <label for="inputPassword4">Confirmation mot de passe</label>
             <input type="password" class="form-control" name="inputCpassword4" id="inputCpassword4" placeholder="Mot de passe">
         </div>
+         <div class="form-group col-md-6">
+            <label for="inputPassword4">Téléphone</label>
+            <input type="number" class="form-control" name="tel" id="tel" placeholder="tel">
+        </div>
         </div>
 
         <div class="form-row">

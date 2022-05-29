@@ -77,9 +77,10 @@
                 </td>
             </tr>
         </table>
+    </form>
         
-        
-         <!-- <table>
+        <form method="post">
+         <table>
             <h3>
                 Administrateur
             </h3>
@@ -114,9 +115,11 @@
                     <input type="submit" name="aformsend" id="aformsend" value="Soumettre">
                 </td>
             </tr>
-        </table> -->
+        </table>
     </form>
     <?php include 'include/inscription.php'?>
+    <?php include 'include/ainscription.php'?>
     <?php include 'include/footer.php'; ?>
+
 </body>
 </html>
