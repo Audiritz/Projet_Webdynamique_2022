@@ -42,7 +42,7 @@ accueil
 
 
 #navbarNav img {
-    margin-right: -1200px;
+    margin-right: -860px;
 }
 
 .carousel-item {
@@ -136,3 +136,11 @@ Tout parcourir
 
 
 }
+.menu-nav{
+    text-align: center;
+}
+.image21{border: solid;
+    width: 100%;
+    height: auto;
+    border: auto;
+border-color: black;}

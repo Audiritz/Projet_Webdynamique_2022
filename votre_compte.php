@@ -18,7 +18,9 @@
 	<link rel="stylesheet" href="design/style.css">
 </head>
 <body>
+
 	<!-- Recherche
+<<<<<<< HEAD
 		<?php include 'include/menu_navigation_principal.php';?> -->
 		<?php include 'include/menu_nav.php';?>
 		
@@ -108,5 +110,58 @@
 			</ul>
 		</nav>
 <?php include 'include/footer.php'; ?>
-	</body>
-	</html>
+	
+	
+=======
+	<?php include 'include/menu_navigation_principal.php';?> -->
+	<?php include 'include/menu_nav.php';?>
+
+	
+	<?php 
+	if(! empty($_SESSION['open_admin'])){
+		
+     echo $_SESSION['nom_admin']; 
+		
+		var_dump($_SESSION);
+		?><a href='include/logout.php'>Click here to log out</a>
+<a href='CreerCoach.php'>Créer Coach</a><?php
+		
+		}
+		
+	elseif(! empty($_SESSION['open_users'])){
+		var_dump($_SESSION);
+		?><a href='include/logout.php'>Click here to log out</a><?php
+	}
+	elseif(! empty($_SESSION['open_coachs'])){
+var_dump($_SESSION);
+?><a href='include/logout.php'>Click here to log out</a><?php
+	}
+	else{}
+
+	?>
+	<br><br><br>
+	<nav class="menu-nav">
+		<ul>
+			<li class="btn">
+			<a href="pconnexion.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Client</a>
+				</a>
+			</li>
+
+			<li class="btn">
+			<a href="pconnexion_coach.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Coach</a>	
+				</a>
+			</li >
+			<li class="btn">
+			<a href="pconnexion_admin.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Administrateur</a>
+				</a>
+			</li >
+		</ul>
+
+		<br><br><div id="img1">
+		<img src="img/silhouette.jpg" alt=""></div>
+		<br><br>
+	</nav>
+	<?php include 'include/footer.php'; ?>
+</body>
+</html>
+>>>>>>> fa7ca2fa527b87d0da80c6092f85c0e7705d9b2a

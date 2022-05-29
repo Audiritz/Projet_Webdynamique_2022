@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Horaires gym</title>
+        <title>CV Cours Collectifs</title>
         <meta charset="uft-8" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,26 +16,21 @@
         crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="design/style.css">
-        <link rel="stylesheet" href="design/infos-gym.css">
+        <link rel="stylesheet" href="design/CV.css">
+        <?php include 'include/database.php';?>
     </head>
     <body>
         <?php include 'include/menu_nav.php';?>
-        <?php include 'include/database.php';?>
-        <p>
-            <p class="titre">NOUVEAUX CLIENTS</p>
-            <p class="text">
-                <?php
-                    $statement=$db->prepare("SELECT * FROM users ORDER BY id_users DESC LIMIT 1");
-                    $statement->execute();
-                    $result = $statement->fetch();
+        
+        <br></br>
 
-                    echo $result['prenom_users'];
-                ?>
-                <?php  
-                    echo $result['nom_users'];   
-                ?>   
-            </p>
-        </p>
+        <img class="image-CV" src="<?php
+                $q=$db->prepare("SELECT * FROM coachs WHERE discipline_coachs= :discipline_coachs");
+                $q->execute(['discipline_coachs' => 9]);
+                $result = $q->fetch();
+
+                echo $result['cv_coachs'];
+                ?>" alt="CV">
         <?php include 'include/footer.php'; ?>
     </body>
 
