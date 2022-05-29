@@ -16,6 +16,7 @@
         crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="design/style.css">
+        <link rel="stylesheet" href="design/infos-gym.css">
 
     </head>
     <body>
