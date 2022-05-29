@@ -25,16 +25,15 @@
             <p class="titre">NOUVEAUX CLIENTS</p>
             <p class="text">
                 <?php
-                    $q=$db->prepare("SELECT * FROM users WHERE id_users = :id_users");
-                    $q->execute(MAX('id_users' ));
-                    $result = $q->fetch();
+                    $statement=$db->prepare("SELECT * FROM users ORDER BY id_users DESC LIMIT 1");
+                    $statement->execute();
+                    $result = $statement->fetch();
 
                     echo $result['prenom_users'];
-                    echo $result['nom_users'];
                 ?>
-            </p>
-            <p class="text">
-                Adrien FERREIRA
+                <?php  
+                    echo $result['nom_users'];   
+                ?>   
             </p>
         </p>
         <?php include 'include/footer.php'; ?>
