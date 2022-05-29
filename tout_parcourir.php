@@ -46,7 +46,7 @@
 				<div class="card">
 					<img class="card-img-top" src="img/sportcompet.jfif" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Sport de Competition</h5><a href="sports_encompetition.php" class="btn btn-outline-secondary">GO</a>
+						<h5 class="card-title">Sport de Competition</h5><a href="sports_de_competition.php" class="btn btn-outline-secondary">GO</a>
 						<p class="card-text">Vous pouvez pratiquer certains sport collectif ou individuel dans lesquels des competitions entre amateur sont organisés entre différents club </p>
 					</div>
 					<div class="card-footer">
