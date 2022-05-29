@@ -22,8 +22,8 @@
 	<?php include 'include/menu_navigation_principal.php';?>
 	<?php include 'include/menu_navigation_moncompte.php';?>
 	<?php include 'include/database.php'?>
-	<?php include 'include/menu_nav.php';?>
-	Connexion compte Coach
+	<?php include 'include/menu_nav.php';?><br><br><br><br><br><br><br>
+	<h1>Connexion compte Coach</h1>
 	<form method="post">
 		<table>
 			<tr>
