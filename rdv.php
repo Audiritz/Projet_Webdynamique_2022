@@ -23,14 +23,15 @@
 	<?php include 'include/menu_nav.php';?>
 
 
-<nav class="menu-nav">
+<nav class="menu-nav"><br><br><br><br>
 	<ul>
 		<?php if (!empty($_SESSION['open_users'])) 
 		{?>
 		<li class="btn">
-			<a href="pcreerRdv.php">
+			<!-- <a href="pcreerRdv.php">
 			Créer un Rendez-vous
-			</a>
+			</a> -->
+			<a href="pcreerRdv.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Créer un Rendez-vous</a>
 		</li><?php 
 }
 		if (!empty($_SESSION['open_users']) || !empty($_SESSION['open_coachs']) || !empty($_SESSION['open_admin']))
@@ -39,10 +40,11 @@
 		 ?>
 		
 		<li class="btn">
-			<a href="pinscription.php">
+			<!-- <a href="pinscription.php">
 			Consulter les Rendez-vous
-			</a>
-		</li >
+			</a> -->
+			<a href="pconnexion_coach.php" class="btn btn-outline-dark btn-lg" tabindex="-1" role="button" aria-disabled="true">Consulter les Rendez-vous</a>
+		</li ><br><br>
 		<?php }
 		else{
 			echo "Connectez-vous pour accéder au Rendez-vous";
