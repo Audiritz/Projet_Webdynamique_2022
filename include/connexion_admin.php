@@ -17,7 +17,7 @@ if (isset($_POST['formlogin'])) {
 			//Le compte existe bien
 			$hashpassword = $result['password_admin'];
 			if (password_verify($mp, $hashpassword)) {
-				echo "Le mot de passe est bon";
+				//echo "Le mot de passe est bon";
 				
 				
 				$_SESSION['email_admin']=$result['email_admin'];
@@ -27,7 +27,7 @@ if (isset($_POST['formlogin'])) {
 				$_SESSION['nom_admin']=$result['nom_admin'];
 				$_SESSION['open_admin']=true;
 
-				echo "connection OK!";
+				
 				header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
   exit();
 

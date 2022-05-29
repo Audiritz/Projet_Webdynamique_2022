@@ -17,7 +17,7 @@ if (isset($_POST['formlogin'])) {
 			//Le compte existe bien
 			$hashpassword = $result['password_users'];
 			if (password_verify($mp, $hashpassword)) {
-				echo "Le mot de passe est bon";
+				//echo "Le mot de passe est bon";
 				
 				
 				$_SESSION['email_users']=$result['email_users'];
@@ -31,10 +31,10 @@ if (isset($_POST['formlogin'])) {
 				$_SESSION['num_carte_users']=$result['num_carte_users'];
 				$_SESSION['date_users']=$result['date_users'];
 				$_SESSION['open_users']=true;
-				echo "connection OK!";
-				header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
+				
+				
+		header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
   exit();
-
 
 			}
 			else
