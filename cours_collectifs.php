@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Coach</title>
+    <title>Cours collectif</title>
 
     <meta charset="uft-8" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

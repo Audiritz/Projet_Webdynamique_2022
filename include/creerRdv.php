@@ -10,8 +10,8 @@ if(isset($_POST['formsend'])){
 			
 			global $db;
 
-			$c=$db->prepare("SELECT debut_rdv FROM rdv WHERE id_coachs = :id_coachs");
-			$c->execute(['id_coachs' => $id]);
+			$c=$db->prepare("SELECT id_coachs FROM rdv WHERE debut_rdv = :debut_rdv");
+			$c->execute(['debut_rdv' => $debut]);
 
 			$result = $c->rowCount();
 

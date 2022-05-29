@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Recherche</title>
+		<title>votre compte</title>
 		<meta charset="uft-8" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -103,7 +103,7 @@
 
 					<br><br><div id="img1">
 					<img src="img/silhouette.jpg" alt=""></div>
-					<br><br>
+					
 				</nav>
 
 				<?php  }?>
