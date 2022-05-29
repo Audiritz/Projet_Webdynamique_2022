@@ -27,7 +27,7 @@
   <div id="wrap">
     <div class="container">
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="omnes.jfif" alt="" width="82" height="82">
+        <img class="d-block mx-auto mb-4" src="img/omnes.jfif" alt="" width="82" height="82">
         <h2>Paiement</h2>
       </div>
 

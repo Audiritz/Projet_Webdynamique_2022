@@ -17,7 +17,7 @@
   </head>
   <body>
       <div id="oue">
-      <img src="payment-accepted_01.png" >
+      <img src="img/payment-accepted_01.png" >
       </div>
       <footer5>
           <a class="btn btn-outline-secondary" href="http://localhost/Projet_Web/Accueil.php" role="button">Retour Accueil</a>
