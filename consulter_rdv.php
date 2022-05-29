@@ -28,9 +28,10 @@
                 $q->execute(['id_users' => $id]);
                 $result = $q->fetch();
         ?>
-        <p>Sport : <?php echo $result['discipline_rdv']      ?></p>
-        <p>Date du RDV : <?php echo $result['debut_rdv']      ?></p>
-        <p>Durée du RDV : <?php echo $result['duree_rdv']      ?></p>
+        <p class="titre">Sport : <?php echo $result['discipline_rdv']      ?></p>
+        <p class="titre">Date du RDV : <?php echo $result['debut_rdv']      ?></p>
+        <p class="titre">Durée du RDV : <?php echo $result['duree_rdv']      ?></p>
+        <?php include 'include/footer.php'; ?>
     </body>
 
 </html>
