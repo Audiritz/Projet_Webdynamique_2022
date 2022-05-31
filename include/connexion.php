@@ -6,31 +6,35 @@ if (isset($_POST['formlogin'])) {
 	extract($_POST);
 	if (!empty($email) && !empty($mp)) {
 
-		$q=$db->prepare("SELECT * FROM users WHERE email = :email");
-		$q->execute(['email' => $email]);
+		$q=$db->prepare("SELECT * FROM users WHERE email_users = :email_users");
+		$q->execute(['email_users' => $email]);
 		
 		$result = $q->fetch();
-         
+		
 		//var_dump($result);
 
 		if ($result == true) {
 			//Le compte existe bien
-			$hashpassword = $result['password'];
+			$hashpassword = $result['password_users'];
 			if (password_verify($mp, $hashpassword)) {
-				echo "Le mot de passe est bon";
-                session_start();
-				$_SESSION['email']=$result['email'];
-				$_SESSION['pseudo']=$result['pseudo'];
-				$_SESSION['id']=$result['id'];
-				$_SESSION['password']=$result['password'];
-				$_SESSION['statut']=$result['statut'];
-				$_SESSION['date']=$result['date'];
-				$semail= $_SESSION['email'];
-				$spseudo=$_SESSION['pseudo'];
-				$sid=$_SESSION['id'];
-				$spassword=$_SESSION['password'];
-				$statut=$_SESSION['statut'];
-				$date=$_SESSION['date'];
+				//echo "Le mot de passe est bon";
+				
+				
+				$_SESSION['email_users']=$result['email_users'];
+				$_SESSION['prenom_users']=$result['prenom_users'];
+				$_SESSION['id_users']=$result['id_users'];
+				$_SESSION['password_users']=$result['password_users'];
+				$_SESSION['nom_users']=$result['nom_users'];
+				$_SESSION['naissance_users']=$result['naissance_users'];
+				$_SESSION['cvv_carte_users']=$result['cvv_carte_users'];
+				$_SESSION['exp_carte_users']=$result['exp_carte_users'];
+				$_SESSION['num_carte_users']=$result['num_carte_users'];
+				$_SESSION['date_users']=$result['date_users'];
+				$_SESSION['open_users']=true;
+				
+				
+		header('Location: http://localhost/Projet_Webdynamique_2022/votre_compte.php');
+  exit();
 
 			}
 			else

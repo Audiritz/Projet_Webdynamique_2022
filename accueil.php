@@ -20,13 +20,12 @@
 </head>
 
 <body>
-    <?php  echo $_SESSION['pseudo']; ?>
-	<?php include 'include/menu_navigation_principal.php';?>
+    
+
 	
 	<div id="wrapper">  
 
 		<?php include 'include/menu_nav.php';?>
-
 
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

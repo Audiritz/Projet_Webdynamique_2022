@@ -20,84 +20,127 @@ accueil
     height: auto;
     border: solid;
 }
+
 .nav-item {
 
-    font-size:xx-large;
+    font-size: xx-large;
     font-weight: 800;
     font-family: serif;
     margin-left: 20px;
-margin-right: 20px;
-padding: 20px;}
+    margin-right: 20px;
+    padding: 20px;
+}
 
-#left-column{
+#left-column {
     margin-right: 750px;
 }
-#right-column img{
 
-    margin-top:  -335px;
+#right-column img {
+
+    margin-top: -335px;
 }
 
 
-#navbarNav img{
-    margin-right: -1200px;
+#navbarNav img {
+    margin-right: -860px;
 }
 
-.carousel-item{
+.carousel-item {
 
-    font-size:xx-large;
+    font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: -1px 0 0 
-    rgba(0, 0, 0, 0.8), 
-                 1px 0 0 
-    rgba(0, 0, 0, 0.8),
-                 0 -1px 0 
-    rgba(0, 0, 0, 0.8),
-                 0 1px 0 
-    rgba(0, 0, 0, 0.8);
+    text-shadow: -1px 0 0 rgba(0, 0, 0, 0.8),
+        1px 0 0 rgba(0, 0, 0, 0.8),
+        0 -1px 0 rgba(0, 0, 0, 0.8),
+        0 1px 0 rgba(0, 0, 0, 0.8);
 
 }
 
 
-#footer{
-    text-align:center;
+#footer {
+    text-align: center;
     color: black;
-    width:100%;
+    width: 100%;
 }
-}/*
+
+/*
 /
 se connecter + s'enregistrer
 /
 */
-#wrapper2{
+#wrapper2 {
     border: 2px;
     padding: 20px;
     margin: 20px;
 }
-#wrapper2 img{
-margin-left: 1000px; 
+
+#wrapper2 img {
+    margin-left: 1000px;
 }
 
-.form-row{
+.form-row {
     margin-left: 20px;
     margin-right: 20px;
 }
-h1{
+
+h1 {
     margin-top: -120px;
     margin-bottom: 120px;
     text-align: center;
-    text-shadow: 0 0 7px 
-rgba(0,0,0, 0.5);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
 }
-.form-check2{
+
+.form-check2 {
     margin: 20px;
     padding: 20px;
     text-align: center;
 }
+
 /*
 /
 Tout parcourir
 /
 */
-.card-deck{
+.card-deck {
     margin-top: 40px;
 }
+
+#wrapper4admin {
+    background-color: darkgrey;
+    border: 2px;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.form-check3 {
+    text-align: center;
+}
+
+#wrappercompte {
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    background-color: darkgrey;
+    border-color: black;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 100px;
+    padding: 20px;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    -moz-border-radius:10px 0;
+    -webkit-border-radius:10px 0;
+    border-radius:10px 0;
+
+
+}
+.menu-nav{
+    text-align: center;
+}
+.image21{border: solid;
+    width: 100%;
+    height: auto;
+    border: auto;
+border-color: black;}

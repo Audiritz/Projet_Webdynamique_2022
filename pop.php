@@ -1,22 +1,75 @@
-<?php  session_start(); ?>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>pop</title>
+    <meta charset="uft-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <?php
+if(isset($_POST) && !empty($_POST)){
+
+    var_dump($_FILES);
+
+    if($_FILES['monfichier']['error'] == 0){
+        ?> <pre><?php print_r($_POST) ?> </pre> <?php
+        
+        //test taille
+        if($_FILES['monfichier']['size'] > 1500000){
+            $error = "Votre fichier est trop lourd.";
+        }
+        
+        // test extension
+        $extension = strrchr($_FILES['monfichier']['name'],'.');
+        if($extension != '.jpg'){
+            $error = "Votre fichier n'est pas conforme.";
+        }
+
+        // au final :
+        if(!isset($error)){
+            move_uploaded_file($_FILES['monfichier']['tmp_name'], 'img/'.$_FILES['monfichier']['name']);
+            echo "le fichier est chargé";
+        }
+
+
+    }else{
+        $error = "problème formulaire";
+    }
+}
+
+?>
+
+
+
+
+<div style="color:red">
+ 
+<?php 
+if(isset($error)) 
+{
+  echo $error; 
+}
+  ?>
+
+ </div>
+<form method="POST" action="" enctype="multipart/form-data">
+    <input type="file" name="monfichier" id="monfichier" value="">
+    <input type= "submit" name="chargement" value="charger le fichier">
+</form>
+<?php 
+$image = 'img/'.$_FILES['monfichier']['name'];
+echo 'img/'.$_FILES['monfichier']['name'];
+print '<img src="'.$image.'">';
+
+
+ ?>
+
+</body>
 </html>
